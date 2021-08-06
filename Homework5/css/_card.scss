@@ -1,0 +1,120 @@
+.cards{
+    @extend %listreset;
+    display: $fl;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+    >li{
+        display: $fl;
+        width: 100%;
+        padding: 0 10px 10px;
+
+        @media (min-width:768px){
+            width: 50%;
+            padding: 0 10px 15px;
+            }
+
+        @media (min-width:922px){
+            width: calc(100%/3);
+            padding: 0 10px 20px;
+
+        }
+    }
+}
+
+.card{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    display: $fl;
+    flex-direction: column;
+    align-items: $cent;
+    text-align: $cent;
+    border-radius: 7% 7% 7% 7%;
+    cursor: $point;
+    transition: all 1s;
+    
+
+    &:hover{
+        @media (min-width:992px) {
+        transform: scale(1.1);   
+        }
+    }
+
+    &__body {
+        flex-grow:1;
+
+    
+    }
+
+    &__visual{
+        position: $rel;
+
+        &::before{
+            z-index: 1;
+            top: -9px;
+            left: -9px;
+            position: $abs;
+            content: '';
+            width: 57px;
+            height: 59px;
+            border-radius: 50%;
+            background-color: $white;
+            border: 12px solid #c7b7b7;
+
+            @media(min-width: 768px){
+                top: -9px;
+                left: -9px;
+                width: 68px;
+                height: 69px;
+            }
+
+            @media(min-width: 992px){
+                top: -7px;
+                left: -7px;
+                width: 74px;
+                height: 73px;
+            }
+        }
+    }
+
+
+    &__visual>img{
+        position: $rel;
+        cursor: $point;
+        z-index:1;
+        width: 40px;
+        height: 40px;
+        border-radius: $base_border;
+
+        @media (min-width:768px) {
+            width: 50px;
+            height: 50px;   
+            border-radius: $base_border;
+        }
+
+        @media (min-width:992px) {
+            width: 60px;
+            height: 60px;   
+            border-radius: $base_border;
+        }
+    }
+}
+
+
+.btn{
+    margin-right: 10px;
+    vertical-align: $t__;
+    display: $in_bl;
+    cursor: $point;
+    text-align: $cent;
+    border-radius: 25% 25% 25% 25%;
+    padding: 7px 15px;
+    color:$white;
+    background-color: $btn_bg;
+    transition: all 1s;
+
+    &:hover{
+        background-color: $btn_hov;
+    }
+}

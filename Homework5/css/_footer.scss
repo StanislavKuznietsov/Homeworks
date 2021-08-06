@@ -1,0 +1,11 @@
+[id="footer"]{
+    display:flex;
+    align-items: $cent;
+    justify-content: $cent;
+    background-color: $footer_bg;
+    min-height: 29px;
+
+    >h3{
+        margin: 0;
+    }
+}
