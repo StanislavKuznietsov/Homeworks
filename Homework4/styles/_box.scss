@@ -1,0 +1,38 @@
+.box{
+    margin-top: 40px;
+    position: $rel;
+    border: 2px solid $red;
+    min-height: 500px;
+
+    &__item{
+        width: 150px;
+        height: 150px;
+        position: $abs;
+
+        &--first{
+            background-color: #ff8888;
+            z-index: 2;
+            top: 27%;
+            left: 29%;
+            animation: $spin_an;
+        }
+
+        &--second{
+            background-color:#7e8aeb ;
+            z-index: 3;
+            top: 43%;
+            left: 41%;
+            animation: $spin_an;
+        }
+
+        &--third{
+            background-color: #4def99;
+            z-index: 1;
+            left: 51%;
+            bottom: 8%;
+            animation:$spin_an;
+        }
+    }
+}
+
+

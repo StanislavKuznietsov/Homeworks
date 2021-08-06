@@ -1,0 +1,64 @@
+.cards{
+    background-color: $card_bg;
+    padding: 50px;
+
+    q,cite{
+        display: $bl;
+        text-align: $cent;
+        font-size: $fz;
+        color: $white;
+    }
+}
+
+.cards__wrapper{
+    display: $fl;
+    justify-content: $cent;
+    align-items: $cent;
+    position: $rel;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    &__img{
+        max-width: 150px;
+
+        &--first{
+            position: $rel;
+            z-index: 1;
+            left: 95px;
+            transform: rotate(-19deg);
+            transition:all .5s;
+
+            &:hover{
+                cursor: $point;
+                transform: translateY(-10%) rotate(-19deg);    
+            }
+        }
+
+        &--second{
+            position: $rel;
+            z-index: 2;
+            top: 8px;
+            transform: rotate(-10deg);
+            transition:all .5s;
+
+            &:hover{
+                cursor: $point;
+                transform: translateY(-10%) rotate(-10deg);    
+            }
+        }
+
+        &--third{
+            position: $rel;
+            z-index: 3;
+            top: 28px;
+            right: 97px;
+            transform: rotate(8deg);
+            transition:all .5s;
+
+            &:hover{
+                cursor: $point;
+                transform: translateY(-10%) rotate(8deg);    
+            }
+        }
+    }
+}

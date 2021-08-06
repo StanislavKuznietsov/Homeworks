@@ -1,0 +1,37 @@
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@keyframes move360 {
+    0%{
+        background-color: $blue;
+        left: 0;
+        bottom: 0;
+    }
+
+    25%{
+        background-color:$green;
+        left: 765px;
+        bottom: 0;
+    }
+
+    50%{
+        background-color:$yellow;
+        left: 765px;
+        bottom: 399px;
+    }
+
+    75%{
+        background-color: $red;
+        left: 0;
+        bottom: 399px;
+    }
+
+    100%{
+        background-color: $blue;
+        left: 0;
+        bottom: 0;
+    }
+}

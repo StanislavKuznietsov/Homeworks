@@ -1,0 +1,13 @@
+.content{
+    position: $rel;
+    border: 2px solid $red;
+    min-height: 500px;
+    margin-top: 40px;
+
+    &__box{
+        width: 100px;
+        height: 100px;
+        position: $abs;
+        animation:move360 linear 5s 2s infinite ;
+    }
+}
