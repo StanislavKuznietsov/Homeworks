@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+                
+        </header>
+        <main>
+            <form action="#" method="POST">
+                <fieldset class="fieldset">
+                    <legend>
+                        <b>Контактная информация</b>
+                    </legend>
+                    <p><label for="name">Имя <em>*</em></label><input type="text" id="name" required></p>
+                    <p><label for="email">E-mail</label><input type="email" id="email" required></p>
+                    <p><label for="phone">Телефон</label><input type="tel" id="phone" required></p>
+                    <p><label for="country">Страна</label>
+                        <select name="country" id="country" class="select__country">
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="USA">USA</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="Brazil">Brazil</option>
+                        </select>
+                    </p>
+                    <div class="wrapper">
+                        <textarea name="text"></textarea>
+                    </div>
+                    <label class="check option">
+                        <input class="check__input" type="checkbox" name="age">
+                        <span class="check__box"></span>
+                        Возраст 18+
+                    </label>
+                    <label class="check option">
+                        <input class="check__input" type="checkbox" name="languages">
+                        <span class="check__box"></span>
+                        Знание иностранных языков
+                    </label>
+                    <label class="check option">
+                        <input class="check__input" type="checkbox" name="experience">
+                        <span class="check__box"></span>
+                        Опыт работы
+                    </label>
+                </fieldset>
+                <p><input class="button" type="submit" value="Отправить"></p>
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
+
+
+
