@@ -1,0 +1,8 @@
+.element{
+    max-width: 350px;
+    height: 220px;
+    padding: $elem_padding;
+    margin: $elem_margin;
+    border:$elem_border-width $elem_border-style $elem_border-color;
+    background-color: $elem_bg;
+}

@@ -1,0 +1,22 @@
+.content{
+    max-width: 700px;
+
+    .content__img-first{
+        max-width: 200px;
+        float: $img_fl;
+        margin: 0 20px 10px 0;
+    }
+
+    .content__img-second{
+        float: $img_fr;
+        max-width: 150px;
+        margin: 15px;
+    }
+
+    & ::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
